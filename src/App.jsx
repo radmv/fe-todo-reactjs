@@ -1,7 +1,10 @@
+import { LoginPage, RegisterPage } from "./pages";
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="flex justify-center min-h-screen items-center">
+      <LoginPage />
+      {/* <RegisterPage /> */}
     </div>
   );
 }
