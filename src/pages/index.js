@@ -1,4 +1,5 @@
+import ErrorPage from "./404";
 import LoginPage from "./login";
 import RegisterPage from "./register";
 
-export { LoginPage, RegisterPage };
+export { ErrorPage, LoginPage, RegisterPage };
