@@ -27,7 +27,9 @@ const FormRegister = () => {
         placeholder="********"
         name="confirmPassword"
       />
-      <Button variant="bg-blue-600 w-full">Register</Button>
+      <Button variant="bg-blue-600 w-full" type="submit">
+        Register
+      </Button>
     </form>
   );
 };
