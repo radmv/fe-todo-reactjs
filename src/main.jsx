@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import {
+  DashboardPage,
   ErrorPage,
-  HomePage,
   LoginPage,
   ProductPage,
   RegisterPage,
@@ -13,16 +13,12 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Welcome</div>,
+    element: <LoginPage />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/home",
-    element: <HomePage />,
-  },
-  {
-    path: "/login",
-    element: <LoginPage />,
+    path: "/dashboard",
+    element: <DashboardPage />,
   },
   {
     path: "/register",

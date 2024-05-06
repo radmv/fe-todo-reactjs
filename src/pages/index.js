@@ -1,7 +1,7 @@
 import ErrorPage from "./404";
-import HomePage from "./Home";
+import DashboardPage from "./Dashboard";
 import LoginPage from "./login";
 import ProductPage from "./products";
 import RegisterPage from "./register";
 
-export { ErrorPage, HomePage, LoginPage, ProductPage, RegisterPage };
+export { DashboardPage, ErrorPage, LoginPage, ProductPage, RegisterPage };

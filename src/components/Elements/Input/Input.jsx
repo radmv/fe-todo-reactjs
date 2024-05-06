@@ -1,14 +1,20 @@
-const Input = (props) => {
-  const { type, placeholder, name } = props;
+import { forwardRef } from "react";
+
+// eslint-disable-next-line react/display-name
+const Input = forwardRef((props, ref) => {
+  const { type, placeholder, name, defaultValue, onChange } = props;
   return (
     <input
       type={type}
-      className="text-sm border rounded w-full py-2 px-3 text-slate-700 opacity-50"
+      className="bg-color-bg border border-color-outline text-white text-sm rounded-lg focus:ring-color-outline focus:border-colring-color-outline block w-full p-2.5 dark:bg-color-bg dark:placeholder-gray-400 dark:text-white dark:focus:ring-color-outline dark:focus:border-colring-color-outline"
       placeholder={placeholder}
       name={name}
       id={name}
+      ref={ref}
+      onChange={onChange}
+      defaultValue={defaultValue}
     />
   );
-};
+});
 
 export default Input;

@@ -6,29 +6,12 @@ const Button = (props) => {
     onClick = () => {},
   } = props;
 
-  const bigClassName = "text-xl px-7 py-5 ";
-  const smallClassName = "text-base px-5 py-3";
-  let className =
-    "font-semibold text-white capitalize transition-all duration-100 ease-in-out rounded-xl focus:opacity-60 focus:outline outline-2 outline-color-primary outline-offset-2";
-
-  switch (variant) {
-    case "secondaryIconBig":
-      className +=
-        " bg-color-primary hover:bg-color-blue flex flex-row gap-3 items-center " +
-        bigClassName;
-      break;
-    case "primaryBig":
-      className += " bg-color-blue hover:bg-color-primary " + bigClassName;
-      break;
-    case "secondarySmall":
-      className += " bg-color-primary hover:bg-color-blue " + smallClassName;
-      break;
-    default:
-      break;
-  }
-
   return (
-    <button className={className} type={type} onClick={onClick}>
+    <button
+      className={`text-white bg-blue-700 hover:opacity-80 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ${variant}`}
+      type={type}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
